@@ -1,0 +1,21 @@
+/heb
+marcus | Auberge la Cannebière |****|alt="Photo d'un dortoire de l'Auberge La Cannebière" 
+fredkleber | Hôtel du port | Nuit à partir de 52e | ***** | alt="Chambre d'hôtel avec deux lits simples." 
+reisetopia | Hôtel Les mouettes | Nuit à partir de 76e | **** | alt="Chambre d'hôtel avec un lit double et une armoire à porte colissante."
+annie-spratt | Hôtel de la mer | Nuit à partir de 46e | *** | alt="Chambre d'hôtel avec un lit double et une peinture de la mer audessus." 
+nicatelee | Auberge Le Panier | Nuit à partir de 23e | **** |  alt="Chambre dans une auberge avec plusieurs lits superposés en bois."
+febrianz-M6Hôtel chez Amina | Nuit à partir de 96e | ***** | alt="Chambre d'hôtel avec deux lits simples, un bureau et une télevision accroché au mur."
+
+/les pops
+emile | Hôtel Le soleil du matin | ***** | Nuit ã partir de 128e | alt="Chambre d'hôtel avec un lit double avec un grand mirror audessus et les murs peints en vert"
+aw-creative | Au cœur de l'eau Chambre d'hôtes | Nuit à partir de 71e | alt="Grande chambre avec un lit double, un haut plafond et une porte qui mène vers une autre pièce." 
+febrianzakaria | Hôtel Tout bleu et Blanc | Nuit à partir de 68e | alt="Chambre d'hôtel avec un lit double.""
+
+/Activités 
+Reno :aithienne | Vieu Port | alt="Le vieu Port de Marseille bondé de bateaux et de quelques voiliers"  
+Paul Hermann | Fort de Pomègues | alt="Le Fort de Pomègues sur une coline rocheuse"
+Kevin Hikari | Îles du Frioul | alt="Les Iles du Frîoul au loin dans la mer" 
+Kilyan | Parc National des Calanques | alt="Le Parc National des Calanques et la mer en photo"
+Florian-weh | Notre-Dame-de-la-Garde | alt="Notre-Dame-de-la-Garde audessu de la ville de Marseille"
+Lena Paulin | Parc Longchamp | alt="Photo de l'entrée du Parc Longchamp"
+ 
