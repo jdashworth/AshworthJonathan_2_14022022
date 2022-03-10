@@ -1,7 +1,0 @@
-.container {
-    display: flex;
-    background-color: rgb(185, 163, 133);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    flex-direction: row;
-    justify-content: flex-start
-}
