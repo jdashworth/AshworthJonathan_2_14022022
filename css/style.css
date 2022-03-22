@@ -4,7 +4,9 @@
 img {
   max-width: 150px;
 }
-
+/************************************
+********header***********************
+************************************/
 header,
 main {
   max-width: 1080px;
@@ -32,57 +34,61 @@ header nav ul {
 header nav ul li {
   list-style-type: none;
 }
-body main section#search-bar h1 {
+#search-bar h1 {
   font-size: 17px;
   margin-block-start: 0.5em;
   margin-block-end: -0.6em;
 }
-body main section#filters p {
+#filters p {
   margin-block-start: 1em;
   margin-block-end: 1em;
+  flex-basis: 100%;
 }
 
-body main section#filters {
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+#filters figure img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-body main section#filters figure img {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-body main section#filters ul {
+#filters ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap:15px;
 }
-body main section#filters ul li {
+#filters ul li {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-body main div#accomodations-popular {
+#accomodations-popular {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
-  background-color: #f2f2f2;
-  border-radius: 5%;
+  justify-content: space-between;
+  
 }
-body main div#accomodations-popular section#accomodations {
+#accomodations-popular #accomodations {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex: auto;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+  flex-basis: 65%;
 }
 
-body main div#accomodations-popular section#accomodations h2 {
+#accomodations-popular #accomodations h2 {
   font-size: 14px;
 }
 
-div#accomodations-popular section#accomodations article {
+#accomodations-popular #accomodations article {
   background-color: #f2f2f2;
   border-radius: 5%;
   background: #ffffff;
@@ -93,21 +99,22 @@ div#accomodations-popular section#accomodations article {
   padding: 15px 20px;
 }
 
-div#accomodations-popular section#accomodations article figure ul {
+#accomodations-popular #accomodations article figure ul {
   display: flex;
   flex-direction: row;
 }
 
-div#accomodations-popular section#accomodations article figure ul li {
+#accomodations-popular #accomodations article figure ul li {
   list-style-type: none;
 }
-body main div#accomodations-popular section#popular {
+#accomodations-popular #popular {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 5%;
+  flex-basis: 33%;
 }
-body main div#accomodations-popular section#popular article {
+#accomodations-popular #popular article {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -121,46 +128,47 @@ body main div#accomodations-popular section#popular article {
   padding: 15px 20px;
 }
 
-div#accomodations-popular section#popular article figure ul {
+#accomodations-popular #popular article figure ul {
   display: flex;
   flex-direction: row;
 }
-div#accomodations-popular section#popular article figure ul li {
+#accomodations-popular #popular article figure ul li {
   list-style-type: none;
 }
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body main section#activities {
+#activities {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex: auto;
+  
 }
-body main section#activities h2 {
+#activities h2 {
   font-size: 14px;
 }
 
 * {
   box-sizing: border-box;
 }
-body footer {
+
+footer {
   background-color: #f2f2f2;
   max-width: 1080px;
   margin: 0 auto;
 }
-body footer div {
+footer div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body footer div div {
+footer div div {
   display: flex;
   flex-direction: column;
 }
 
-body footer div div ul li {
+footer div div ul li {
   list-style-type: none;
 }
