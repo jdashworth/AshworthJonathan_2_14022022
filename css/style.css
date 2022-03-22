@@ -1,3 +1,166 @@
-body {
-    background-color: red;
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 150px;
+}
+
+header,
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 90px;
+  margin-block-end: 0.9em;
+  margin-block-start: 0.9em;
+}
+header nav {
+  flex-basis: 25%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style-type: none;
+}
+body main section#search-bar h1 {
+  font-size: 17px;
+  margin-block-start: 0.5em;
+  margin-block-end: -0.6em;
+}
+body main section#filters p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+body main section#filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body main section#filters figure img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body main section#filters ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main section#filters ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body main div#accomodations-popular {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+}
+body main div#accomodations-popular section#accomodations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: auto;
+}
+
+body main div#accomodations-popular section#accomodations h2 {
+  font-size: 14px;
+}
+
+div#accomodations-popular section#accomodations article {
+  background-color: #f2f2f2;
+  border-radius: 5%;
+  background: #ffffff;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+div#accomodations-popular section#accomodations article figure ul {
+  display: flex;
+  flex-direction: row;
+}
+
+div#accomodations-popular section#accomodations article figure ul li {
+  list-style-type: none;
+}
+body main div#accomodations-popular section#popular {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+}
+body main div#accomodations-popular section#popular article {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+  flex: 1;
+  background: #ffffff;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+div#accomodations-popular section#popular article figure ul {
+  display: flex;
+  flex-direction: row;
+}
+div#accomodations-popular section#popular article figure ul li {
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body main section#activities {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: auto;
+}
+body main section#activities h2 {
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body footer {
+  background-color: #f2f2f2;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+body footer div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body footer div div {
+  display: flex;
+  flex-direction: column;
+}
+
+body footer div div ul li {
+  list-style-type: none;
 }
