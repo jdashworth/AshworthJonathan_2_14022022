@@ -1,48 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+body {
+  font-family: 'Raleway', sans-serif;
+}
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 img {
   max-width: 150px;
 }
-/************************************
-********header***********************
+/***********************************
+********     header*****************
 ************************************/
 header,
 main {
   max-width: 1080px;
   margin: 0 auto;
+  
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 3.5em;
+  
+ 
 }
 
 header img {
   max-width: 90px;
-  margin-block-end: 0.9em;
-  margin-block-start: 0.9em;
+
+ 
 }
 header nav {
   flex-basis: 25%;
+  
 }
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 3.5em;
+  align-items: flex-end;
+  border-top: olive;
+  
+  
+  
+
 }
+
+
+
 header nav ul li {
+  font-size: 1em;
+  list-style-type: none;
+  text-decoration: none;
+ 
+  
+}
+header nav ul li a:hover {
+  text-decoration:overline;
+  list-style-type: none;
+  color: #0565FC;
+}
+header nav ul li a:link{
+  text-decoration: none;
   list-style-type: none;
 }
+
+
+header nav ul li a:visited{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header nav ul li a:hover {
+  text-decoration:overline;
+  list-style-type: none;
+}
+
+
+/***********************************
+***********search-bar***************
+************************************/
 #search-bar h1 {
-  font-size: 17px;
-  margin-block-start: 0.5em;
-  margin-block-end: -0.6em;
+  font-size: 1em;
+  
+  
 }
 #filters p {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   flex-basis: 100%;
+  
+}
+#search-bar form {
+  display:flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1em;
+  justify-content: flex-start;
+  border: rgb(146, 146, 132) 2px solid;
+}
+
+.fa-solid #fa-location-dot {
+  color: #000000;
 }
 
 #filters {
@@ -50,12 +111,10 @@ header nav ul li {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  gap: 1em;
+  
 }
-#filters figure img {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+
 #filters ul {
   display: flex;
   flex-direction: row;
@@ -66,8 +125,12 @@ header nav ul li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap:15px;
 }
 
+/***********************************
+*****articles accomodations-popular*
+************************************/
 #accomodations-popular {
   display: flex;
   flex-direction: row;
@@ -78,25 +141,27 @@ header nav ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: auto;
+  justify-content: space-between;
+  padding: 25px 15px;
   background-color: #f2f2f2;
-  border-radius: 5%;
+  border-radius: 20px;
   flex-basis: 65%;
 }
 
 #accomodations-popular #accomodations h2 {
-  font-size: 14px;
+  font-size: 1.2em;
+  flex-basis: 100%;
 }
 
 #accomodations-popular #accomodations article {
-  background-color: #f2f2f2;
-  border-radius: 5%;
-  background: #ffffff;
+  
   color: #fff;
-  border-radius: 10px;
-  margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
+  flex-basis: 31%;
+}
+#accomodations-popular #accomodations article img {
+  max-width: 100%;
 }
 
 #accomodations-popular #accomodations article figure ul {
@@ -110,19 +175,16 @@ header nav ul li {
 #accomodations-popular #popular {
   display: flex;
   flex-direction: column;
+  padding: 25px 15px;
   background-color: #f2f2f2;
-  border-radius: 5%;
+  border-radius: 20px;
   flex-basis: 33%;
 }
 #accomodations-popular #popular article {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
-  border-radius: 5%;
-  flex: 1;
-  background: #ffffff;
   color: #fff;
-  border-radius: 10px;
+  
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
@@ -139,6 +201,10 @@ header nav ul li {
     box-sizing: border-box;
 }
 
+/***********************************
+*****articles activites*************
+************************************/
+
 #activities {
   display: flex;
   flex-direction: row;
@@ -147,7 +213,12 @@ header nav ul li {
 }
 #activities h2 {
   font-size: 14px;
+  flex-basis: 100%;
 }
+
+/***********************************
+*************footer*************
+************************************/
 
 * {
   box-sizing: border-box;
