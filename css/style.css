@@ -10,6 +10,10 @@ body {
 img {
   max-width: 150px;
 }
+a {
+  color: #000000;
+
+}
 /***********************************
 ********     header*****************
 ************************************/
@@ -43,7 +47,7 @@ header nav ul {
   justify-content: space-between;
   height: 3.5em;
   align-items: flex-end;
-  border-top: olive;
+  
   
   
   
@@ -84,22 +88,69 @@ header nav ul li a:hover {
 /***********************************
 ***********search-bar***************
 ************************************/
+
+
 #search-bar h1 {
   font-size: 1em;
   
   
+  
+}
+#search-bar p {
+  margin: 10px 0px;
+}
+#search-bar form label {
+  border-top: #F2F2F2 solid;
+  border-left: #F2F2F2 solid;
+  border-bottom: #F2F2F2 solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px 20px;
+  background-color:#F2F2F2 ;
 }
 #filters p {
+  display:flex;
   flex-basis: 100%;
+  
   
 }
 #search-bar form {
   display:flex;
   flex-direction: row;
-  margin: auto;
-  gap: 1em;
+ 
+  
   justify-content: flex-start;
-  border: rgb(146, 146, 132) 2px solid;
+
+ 
+  padding: 0px 0px ;
+  margin: 0px 0px;
+  border-style: none;
+}
+input {
+  border-top: #F2F2F2 solid;
+  border-top: #F2F2F2 solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: #F2F2F2 solid;
+  padding: 10px 10px;
+  
+}
+
+button {
+
+  border-top: #0065FC solid;
+  border-left: 0;
+  border-right: #0065FC solid;
+  border-bottom: #0065FC solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px 10px;
+  background-color:#0065FC ;
+}
+span {
+  background-color: #0065FC;
+  color: #ffffff;
+  font-size: 1.2em;
 }
 
 .fa-solid #fa-location-dot {
@@ -111,21 +162,51 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 1em;
+  gap: 30px;
   
+  
+}
+
+#filters i {
+  width: auto;
+  height: auto;
+  color: #0565FC;
+  background-color: #DEEBFF;
+  border: 2px solid #DEEBFF;
+  border-radius: 50%;
+  padding: 16px 16px 16px 16px; 
+    
 }
 
 #filters ul {
   display: flex;
   flex-direction: row;
-  gap:15px;
+  justify-content: space-around;  
+  gap: 30px;
+  margin: 20px 20px;
+  
+  
 }
 #filters ul li {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap:15px;
+  width: auto;
+  height: auto;
+  border-radius: 25px;
+  border: 1px solid #DADADA;
+  border-left: 0;
+  padding-right: 20px;
+
+  
+  
+  
+
+  
+  
+ 
+  
+
+  
+  
 }
 
 /***********************************
@@ -146,11 +227,15 @@ header nav ul li a:hover {
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 65%;
+  
 }
 
 #accomodations-popular #accomodations h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   flex-basis: 100%;
+  justify-content:flex-start
+
+ 
 }
 
 #accomodations-popular #accomodations article {
@@ -159,6 +244,12 @@ header nav ul li a:hover {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
   flex-basis: 31%;
+}
+
+#accomodations-popular #accomodations article a:link {
+  text-decoration:none;
+  list-style-type: none;
+  
 }
 #accomodations-popular #accomodations article img {
   max-width: 100%;
@@ -171,7 +262,10 @@ header nav ul li a:hover {
 
 #accomodations-popular #accomodations article figure ul li {
   list-style-type: none;
+  
 }
+
+
 #accomodations-popular #popular {
   display: flex;
   flex-direction: column;
@@ -188,6 +282,10 @@ header nav ul li a:hover {
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
+}
+#accomodations-popular #popular article a:link {
+  text-decoration:none;
+  list-style-type: none;
 }
 
 #accomodations-popular #popular article figure ul {
@@ -208,7 +306,9 @@ header nav ul li a:hover {
 #activities {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1080px;
   
 }
 #activities h2 {
