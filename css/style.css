@@ -116,9 +116,7 @@ header nav ul li a:hover {
 }
 #search-bar form {
   display:flex;
-  flex-direction: row;
- 
-  
+  flex-direction: row; 
   justify-content: flex-start;
 
  
@@ -151,10 +149,6 @@ span {
   background-color: #0065FC;
   color: #ffffff;
   font-size: 1.2em;
-}
-
-.fa-solid #fa-location-dot {
-  color: #000000;
 }
 
 #filters {
@@ -196,17 +190,21 @@ span {
   border-left: 0;
   padding-right: 20px;
 
-  
-  
-  
+}
 
-  
-  
- 
-  
+#filters p {
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 30px;
+}
 
-  
-  
+#filters p i {
+  color: #000000;
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+  border: black solid ;
+  border-radius: 50%;
 }
 
 /***********************************
@@ -216,8 +214,24 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items:flex-start;
   
 }
+#accomodations-popular #accomodations h2 {
+  
+  font-size: 1.5em;
+  flex-basis: 100%;
+  justify-content:flex-start;
+  padding-bottom: 10px;
+
+  
+  
+  
+  
+
+ 
+}
+
 #accomodations-popular #accomodations {
   display: flex;
   flex-direction: row;
@@ -230,20 +244,16 @@ span {
   
 }
 
-#accomodations-popular #accomodations h2 {
-  font-size: 1.5em;
-  flex-basis: 100%;
-  justify-content:flex-start
-
- 
-}
-
 #accomodations-popular #accomodations article {
-  
-  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  margin:  5px 5px;
+  background-color: #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
   flex-basis: 31%;
+  
 }
 
 #accomodations-popular #accomodations article a:link {
@@ -253,6 +263,8 @@ span {
 }
 #accomodations-popular #accomodations article img {
   max-width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 #accomodations-popular #accomodations article figure ul {
