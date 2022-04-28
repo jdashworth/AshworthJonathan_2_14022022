@@ -346,22 +346,23 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   padding: 25px 15px;
-  flex-basis: 100%;
+  
 
 }
 #activities h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   flex-basis: 100%;
-  padding: 5px 15px;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  padding-bottom: 10px ;
 }
 #activities div   {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 23%;
+  flex-wrap: wrap;
+  justify-content:space-around;
   max-width:  100%;
   background-color: #ffffff;
   border-radius: 20px;
@@ -374,18 +375,21 @@ h3 {
 }
 
 
-#activities div article img {
+#activities div article figure img {
   
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   max-width:  100%;
+  max-height: 160px;
+
   
 }
-#activities div article figcaption {
+#activities div h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   max-width:  100%;
+  justify-content: flex-end;
   
   
 }
