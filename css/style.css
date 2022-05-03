@@ -361,8 +361,8 @@ h3 {
 #activities div   {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content:end;
+  
   max-width:  100%;
   background-color: #ffffff;
   border-radius: 20px;
@@ -371,25 +371,23 @@ h3 {
   box-shadow: 1px 3px  5px rgba(0, 0, 0, 0.4);
   
   
-  
 }
+
 
 
 #activities div article figure img {
-  
+
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  max-width:  100%;
-  max-height: 160px;
-
-  
+  width: 300px; 
+  height: inherit;
 }
-#activities div h3 {
+#activities div article figure figcaption h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   max-width:  100%;
-  justify-content: flex-end;
+ 
   
   
 }
