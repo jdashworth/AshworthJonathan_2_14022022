@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 body {
   font-family: "Raleway", sans-serif;
-  
-    margin: 0 auto;
-    
+
+  margin: 0 auto;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
-
 }
 a {
   color: #000000;
@@ -19,7 +16,9 @@ a {
 /***********************************
 ********     header*****************
 ************************************/
-header, main,footer>div {
+header,
+main,
+footer {
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -31,14 +30,9 @@ header {
 }
 header a {
   color: #757575;
-  
 }
 header img {
-  padding: 1.3em 1.3em ;
-  
-  
-  
-  
+  padding: 1.3em 1.3em;
 }
 header nav {
   flex-basis: 25%;
@@ -50,8 +44,6 @@ header nav ul {
   height: 3.5em;
   align-items: flex-end;
   text-decoration-color: #757575;
-  
-  
 }
 
 header nav ul li {
@@ -62,33 +54,21 @@ header nav ul li {
   text-decoration-color: #757575;
   align-self: flex-end;
   justify-content: space-evenly;
-  
-  
-  
-  
 }
 header nav ul li a {
-  
   text-decoration-color: #757575;
   list-style-type: none;
   justify-items: center;
-
-
 }
 header nav ul li:hover {
   text-decoration: #0565fc;
   list-style-type: none;
   color: #0565fc;
   padding-top: 38px;
-  border-top: #0565fc solid; 
-  border-top-width: 2px;
-  
-  
- 
-  
+  border-top: #0565fc solid;
+  border-top-width: 5px;
 }
 header nav ul a:hover {
-  
   color: #0565fc;
   list-style-type: none;
 }
@@ -96,9 +76,7 @@ header nav ul a:hover {
 header nav ul li a:visited {
   text-decoration: none;
   list-style-type: none;
-  
 }
-
 
 /***********************************
 ***********search-bar***************
@@ -110,7 +88,7 @@ header nav ul li a:visited {
 }
 #search-bar h1 {
   font-size: 1.1em;
-  margin: 0 ;
+  margin: 0;
 }
 #search-bar p {
   align-content: flex-end;
@@ -119,13 +97,12 @@ header nav ul li a:visited {
   font-size: 0.8em;
   color: #757575;
 }
-#search-bar form  {
+#search-bar form {
   display: flex;
   flex-wrap: wrap;
   padding-left: 5em;
 }
 #search-bar form label {
-  
   border-top: #f2f2f2 solid;
   border-left: #f2f2f2 solid;
   border-bottom: #f2f2f2 solid;
@@ -142,7 +119,6 @@ header nav ul li a:visited {
   flex-basis: 100%;
   font-weight: bold;
   color: #000000;
-  
 }
 #search-bar form {
   display: flex;
@@ -154,7 +130,6 @@ header nav ul li a:visited {
   border-style: none;
 }
 input#search {
-  
   border-top: #f2f2f2 solid;
   border-top: #f2f2f2 solid;
   border-left: 0;
@@ -165,9 +140,6 @@ input#search {
   max-width: 175px;
   width: 100%;
 }
-#search-bar :placeholder-shown {
-  color: #000000 solid;
-}
 
 button {
   border-top: #0065fc solid;
@@ -177,12 +149,8 @@ button {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #0065fc;
-  
-  
-
 }
 span {
-
   padding-left: 0.9em;
   padding-right: -0.3em;
   background-color: #0065fc;
@@ -196,64 +164,74 @@ i {
 /***********************************
 ***********filters buttons***************
 ************************************/
+
+#filters h2 {
+  font-size: 1em;
+  padding-right: 1.5em;
+}
 #filters {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  padding-top: 15px;
 }
-
-
 
 #filters ul {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 20px 20px;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 15px;
 }
 #filters ul li {
-  flex-wrap:wrap;
+  font-size: 0.9em;
+  flex-wrap: wrap;
   list-style-type: none;
   width: auto;
-  height: 54px;
+  height: auto;
   border-radius: 25px;
-  border: 1px solid #dadada;
-  border-left: 0;
+  font-weight: bold;
+
+  border: 1px solid #dbdbdb;
+  border-left: 0px;
+
   padding-right: 20px;
 }
 #filters ul li i {
-  width: 54px;
-  height: 54px;
-  align-items: center;
+  font-size: 1.2em;
+  width: 51px;
+  height: 51px;
+
   justify-content: center;
   color: #0565fc;
   background-color: #deebff;
-  border: 2px solid #deebff;
+  border: px #deebff;
   border-radius: 50%;
   padding: 16px 16px 16px 16px;
 }
 
+#filters p i {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #0065fc;
+  border: 1.5px solid;
+  border-color: #dadada;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
 #filters p {
   align-items: center;
   gap: 1em;
+  padding-top: 30px;
   padding-bottom: 30px;
   color: #757575;
-}
-
-#filters p i {
-  display: flex;
-  flex-wrap:wrap;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  color: #000000; 
-  border: 2px solid;
-  border-color:#dadada;
-  border-radius: 50%;
+  font-size: 0.8em;
+  font-weight: 600;
 }
 
 /***********************************
@@ -266,33 +244,49 @@ i {
   align-items: flex-start;
 }
 
-#accomodations-popular #accomodations h2 {
-  font-size: 1.5em;
+.active {
+  color: #0065fc;
+}
+.notactive {
+  color: #dadada;
+}
+#accomodations-popular h2 {
+  font-size: 1em;
   flex-basis: 100%;
   justify-content: flex-start;
-  padding-bottom: 10px;
-  padding-bottom: 10px ;
+
+  padding-top: 10px;
 }
-h3 {
-  font-size: 16px;
+
+#accomodations-popular p {
+  color: #757575;
+  font-size: 0.8em;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#accomodations-popular h3 {
+  font-size: 0.9em;
   flex-basis: 100%;
 }
 #accomodations-popular #accomodations {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   justify-content: space-between;
-  padding: 25px 15px;
+  row-gap: 30px;
+
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 65%;
+  padding: 25px 25px 45px 25px;
 }
 
 #accomodations-popular #accomodations article {
   width: fit-content;
   height: fit-content;
-  justify-content: space-between;
-  margin: 5px 5px;
+  margin: 2px 2px;
   background-color: #fff;
   border-radius: 5%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
@@ -300,13 +294,16 @@ h3 {
   flex-basis: 31%;
 }
 
+#accomodations-popular #accomodations article h3 {
+  font-size: 0.9em;
+  padding-left: 5px;
+}
+
 #accomodations-popular #accomodations article a:link {
   text-decoration: none;
   list-style-type: none;
 }
 #accomodations-popular #accomodations article img {
-  
-  
   width: 200px;
   height: 113px;
   border-top-left-radius: 5%;
@@ -316,40 +313,44 @@ h3 {
 #accomodations-popular #accomodations article figure ul {
   display: flex;
   flex-direction: row;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 #accomodations-popular #accomodations article figure ul li {
   list-style-type: none;
+  font-size: 0.6em;
 }
-#accomodations-popular #accomodations h2 {
-  display: flex;
-  font-size: 1.5em;
-  flex-basis: 100%;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-  padding-top: 10px;
+#accomodations-popular #accomodations h3 {
+  font-size: 1em;
 }
 
 #accomodations-popular #popular {
   display: flex;
   align-items: center;
   flex-direction: column;
+  row-gap: 20px;
   padding: 25px 15px;
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 33%;
 }
+#accomodations-popular #popular article {
+  display: flex;
+  flex-direction: row;
+}
 #popular h2 {
   align-self: start;
-  padding-bottom: 10px;
-  padding-top: 10px ;
+
+  padding-top: 10px;
+  font-size: 1.1em;
 }
 
 #accomodations-popular #popular article {
   width: fit-content;
   height: fit-content;
   justify-content: space-between;
-  margin: 5px 5px;
+
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -357,24 +358,28 @@ h3 {
   margin: 5px 5px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 5px 5px;
+  padding-right: 15px;
 }
-#accomodations-popular #popular article figure  {
+#accomodations-popular #popular article figure {
   display: flex;
   justify-content: center;
-  padding: 5px 5px;
-  
+  padding: 2px 2px;
 }
-#accomodations-popular #popular article figure img  {
+#accomodations-popular #popular article figure figcaption h3 {
+  flex-basis: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#accomodations-popular #popular article figure img {
   width: 120px;
   height: 120px;
   border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+
   display: flex;
   justify-content: center;
   border-top-left-radius: 5%;
   border-bottom-left-radius: 5%;
-  margin-right:  5px;
-  
+  margin-right: 5px;
 }
 
 #accomodations-popular #popular article a:link {
@@ -382,16 +387,21 @@ h3 {
   list-style-type: none;
 }
 
+#accomodations-popular #popular article figure figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
 #accomodations-popular #popular article figure ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items:center;
+  align-items: flex-end;
+  padding-left: 10px;
 }
 #accomodations-popular #popular article figure ul li {
-  
   list-style-type: none;
-
+  font-size: 0.6em;
 }
 
 /***********************************
@@ -402,41 +412,38 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-top: 25px;
   margin-bottom: 25px;
-  
-  
-
 }
 #activities h2 {
   font-size: 1.5em;
   flex-basis: 100%;
   justify-content: flex-start;
   padding-bottom: 10px;
-  padding-bottom: 10px ;
+  padding-bottom: 10px;
 }
-#activities div   {
- 
+#activities div {
   flex-basis: 23%;
   height: 380px;
-   
-  
 }
-#activities div:nth-of-type(2), #activities div:nth-of-type(4) {
+#activities div:nth-of-type(2),
+#activities div:nth-of-type(4) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}  
+}
 
-
-#activities div:nth-of-type(1) article, #activities div:nth-of-type(3) article  {
+#activities div:nth-of-type(1) article,
+#activities div:nth-of-type(3) article {
   height: 100%;
 }
-#activities div:nth-of-type(2) article:nth-of-type(1), #activities div:nth-of-type(4) article:nth-of-type(2) {
+#activities div:nth-of-type(2) article:nth-of-type(1),
+#activities div:nth-of-type(4) article:nth-of-type(2) {
   height: 55%;
 }
-#activities div:nth-of-type(2) article:nth-of-type(2), #activities div:nth-of-type(4) article:nth-of-type(1) {
+#activities div:nth-of-type(2) article:nth-of-type(2),
+#activities div:nth-of-type(4) article:nth-of-type(1) {
   height: 36%;
 }
 #activities div article figure {
@@ -444,12 +451,12 @@ h3 {
   flex-direction: column;
   height: 100%;
   border-radius: 20px;
-  box-shadow: 2px 2px 10px #E0E0E0;
+  box-shadow: 2px 2px 10px #e0e0e0;
 }
-#activities div article figure img{
+#activities div article figure img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   max-width: 100%;
   overflow-y: hidden;
@@ -464,12 +471,7 @@ h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  width: 100%; 
-
- 
- 
-  
-  
+  width: 100%;
 }
 /***********************************
 *************footer*************
@@ -480,38 +482,27 @@ h3 {
 }
 
 footer {
-
   background-color: #f2f2f2;
   padding: 10px 10px;
-  
-
-
 }
-footer>div {
+footer > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  
-  
+  justify-content: space-evenly;
 }
 
 footer div div h4 {
   flex-flow: 100%;
   justify-content: flex-start;
   margin-top: 15px;
-  
-  
 }
 footer div div ul li {
   list-style-type: none;
   margin-top: 15px;
   margin-bottom: 15px;
-  
 }
 a:link {
-  
   text-decoration: none;
   list-style-type: none;
-
 }
