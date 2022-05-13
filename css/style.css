@@ -18,21 +18,20 @@ a {
 ************************************/
 header,
 main,
-footer {
-  max-width: 1080px;
+footer>div {
+  max-width: 1160px;
   margin: 0 auto;
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 5em;
-}
-header a {
-  color: #757575;
+  align-items: center;
 }
 header img {
-  padding: 1.3em 1.3em;
+  
+  max-width: 95px ;
+  height: auto
 }
 header nav {
   flex-basis: 25%;
@@ -41,9 +40,10 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 3.5em;
-  align-items: flex-end;
-  text-decoration-color: #757575;
+
+  height: 6em;
+  align-items: center;
+  
 }
 
 header nav ul li {
@@ -51,31 +51,25 @@ header nav ul li {
   flex-basis: 50%;
   font-size: 0.9em;
   list-style-type: none;
-  text-decoration-color: #757575;
-  align-self: flex-end;
-  justify-content: space-evenly;
-}
-header nav ul li a {
-  text-decoration-color: #757575;
-  list-style-type: none;
-  justify-items: center;
+  height: 100%;
+  margin-top:3px ;
+ align-items: center;
+ justify-content: center;
 }
 header nav ul li:hover {
-  text-decoration: #0565fc;
-  list-style-type: none;
-  color: #0565fc;
-  padding-top: 38px;
-  border-top: #0565fc solid;
-  border-top-width: 5px;
+ 
+  border-top:3px #0065fc solid;
+  margin-top:  0;
+  
 }
-header nav ul a:hover {
+header nav ul li:hover a{
   color: #0565fc;
-  list-style-type: none;
+  
 }
 
 header nav ul li a:visited {
   text-decoration: none;
-  list-style-type: none;
+ 
 }
 
 /***********************************
@@ -91,11 +85,11 @@ header nav ul li a:visited {
   margin: 0;
 }
 #search-bar p {
-  align-content: flex-end;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  font-size: 0.8em;
-  color: #757575;
+  
+  padding-bottom: 10px ;
+  padding-top: 10px;
+  font-size: 0.9em;
+ 
 }
 #search-bar form {
   display: flex;
@@ -113,12 +107,7 @@ header nav ul li a:visited {
 }
 #search-bar form label i {
   color: #000000;
-}
-#filters p {
-  display: flex;
-  flex-basis: 100%;
-  font-weight: bold;
-  color: #000000;
+
 }
 #search-bar form {
   display: flex;
@@ -130,17 +119,19 @@ header nav ul li a:visited {
   border-style: none;
 }
 input#search {
-  border-top: #f2f2f2 solid;
-  border-top: #f2f2f2 solid;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: #f2f2f2 solid;
-  border-width: 2px;
+  border: 2px #f2f2f2 solid;
   padding: 10px 10px 10px;
   max-width: 175px;
   width: 100%;
 }
-
+input::placeholder {
+  color:#000000;
+  opacity: 1;
+  font-weight: bold;
+}
+input:focus {
+  outline: none;
+}
 button {
   border-top: #0065fc solid;
   border-right: #0065fc solid;
@@ -185,30 +176,29 @@ i {
   gap: 15px;
 }
 #filters ul li {
+  display: flex;
+
   font-size: 0.9em;
-  flex-wrap: wrap;
   list-style-type: none;
-  width: auto;
-  height: auto;
-  border-radius: 25px;
+  align-items: center;
+  border-radius: 28px;
   font-weight: bold;
-
-  border: 1px solid #dbdbdb;
-  border-left: 0px;
-
+  border: 3px solid #dbdbdb;
   padding-right: 20px;
+  
 }
 #filters ul li i {
+  display: flex;
+  align-items: center;
   font-size: 1.2em;
   width: 51px;
-  height: 51px;
-
+  height: 51px; 
   justify-content: center;
   color: #0565fc;
   background-color: #deebff;
-  border: px #deebff;
   border-radius: 50%;
-  padding: 16px 16px 16px 16px;
+  margin-right: 10px;
+  margin-left: -4px;
 }
 
 #filters p i {
@@ -225,13 +215,14 @@ i {
   font-size: 0.8em;
 }
 #filters p {
+  display: flex;
   align-items: center;
   gap: 1em;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #757575;
-  font-size: 0.8em;
-  font-weight: 600;
+ 
+  font-size: 1em;
+  
 }
 
 /***********************************
@@ -276,7 +267,7 @@ i {
 
   justify-content: space-between;
   row-gap: 30px;
-
+  
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 65%;
@@ -311,6 +302,7 @@ i {
 }
 
 #accomodations-popular #accomodations article figure ul {
+  margin-top: auto;
   display: flex;
   flex-direction: row;
   padding-left: 5px;
@@ -321,9 +313,7 @@ i {
   list-style-type: none;
   font-size: 0.6em;
 }
-#accomodations-popular #accomodations h3 {
-  font-size: 1em;
-}
+
 
 #accomodations-popular #popular {
   display: flex;
@@ -347,12 +337,10 @@ i {
 }
 
 #accomodations-popular #popular article {
-  width: fit-content;
-  height: fit-content;
+  width:  100%;
   justify-content: space-between;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #ffffff;
   border-radius: 5%;
   margin: 5px 5px;
@@ -366,13 +354,14 @@ i {
   padding: 2px 2px;
 }
 #accomodations-popular #popular article figure figcaption h3 {
-  flex-basis: 100%;
+  
   padding-top: 10px;
   padding-left: 10px;
 }
 #accomodations-popular #popular article figure img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 110%;
+  max-width:  100%;
   border-top-left-radius: 5%;
 
   display: flex;
@@ -425,7 +414,7 @@ i {
 }
 #activities div {
   flex-basis: 23%;
-  height: 380px;
+  height: 415px;
 }
 #activities div:nth-of-type(2),
 #activities div:nth-of-type(4) {
@@ -489,9 +478,11 @@ footer > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  
 }
-
+footer div div {
+  flex-basis:  33%;
+}
 footer div div h4 {
   flex-flow: 100%;
   justify-content: flex-start;
