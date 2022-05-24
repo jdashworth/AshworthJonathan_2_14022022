@@ -183,8 +183,14 @@ i {
   align-items: center;
   border-radius: 28px;
   font-weight: bold;
-  border: 3px solid #dbdbdb;
+  border: 1.5px solid #dbdbdb;
   padding-right: 20px;
+  
+  
+}
+#filters ul li:hover {
+  background-color: #0564fca8;
+  border: 1.5px solid #dbdbdb;
   
 }
 #filters ul li i {
@@ -229,10 +235,14 @@ i {
 *****articles accomodations-popular*
 ************************************/
 #accomodations-popular {
+  width: fit-content;
+  min-height: fit-content;
   display: flex;
+  margin:  0 auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 30px;
 }
 
 .active {
@@ -242,52 +252,50 @@ i {
   color: #dadada;
 }
 #accomodations-popular h2 {
-  font-size: 1em;
+  font-size: 1.3em;
   flex-basis: 100%;
   justify-content: flex-start;
 
   padding-top: 10px;
 }
 
-#accomodations-popular p {
-  color: #757575;
-  font-size: 0.8em;
-  padding-left: 5px;
-  padding-top: 5px;
-}
 
 #accomodations-popular h3 {
-  font-size: 0.9em;
+  font-size: 14px;
   flex-basis: 100%;
+  
 }
 #accomodations-popular #accomodations {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   justify-content: space-between;
-  row-gap: 30px;
-  
+  row-gap: 25px;
+
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 65%;
-  padding: 25px 25px 45px 25px;
+  padding: 25px 25px 25px 25px;
+
 }
 
 #accomodations-popular #accomodations article {
-  width: fit-content;
-  height: fit-content;
-  margin: 2px 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1px 1px;
   background-color: #fff;
   border-radius: 5%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 5px 5px;
-  flex-basis: 31%;
+  flex-basis: 20%;
+  
 }
 
 #accomodations-popular #accomodations article h3 {
-  font-size: 0.9em;
   padding-left: 5px;
+  flex-basis: 100%;
 }
 
 #accomodations-popular #accomodations article a:link {
@@ -296,50 +304,73 @@ i {
 }
 #accomodations-popular #accomodations article img {
   width: 200px;
-  height: 113px;
+  height: 100px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 }
+#accomodations-popular #accomodations article p {
+  font-size: 0.8em;
+  padding-left: 5px;
+  padding-top: 5px;
+}
 
 #accomodations-popular #accomodations article figure ul {
+  justify-content: flex-start;
   margin-top: auto;
   display: flex;
-  flex-direction: row;
+  
   padding-left: 5px;
   padding-top: 5px;
 }
 
 #accomodations-popular #accomodations article figure ul li {
   list-style-type: none;
-  font-size: 0.6em;
+  font-size: 0.8em;
+}
+#accomodations-popular h4 {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex-basis: 100%;
+font-size: 16px;
+
 }
 
 
 #accomodations-popular #popular {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
   row-gap: 20px;
   padding: 25px 15px;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 25px;
   flex-basis: 33%;
+  width: fit-content;
+  height: fit-content;
+  flex: 1;
+  padding: 25px 25px 25px 25px;
+
+
 }
+
+#accomodations-popular #popular h2 {
+  display: flex;
+  
+  justify-content: flex-start;
+}
+
+
 #accomodations-popular #popular article {
   display: flex;
   flex-direction: row;
-}
-#popular h2 {
-  align-self: start;
+  width: fit-content;
+  height: fit-content;
 
-  padding-top: 10px;
-  font-size: 1.1em;
-}
-
-#accomodations-popular #popular article {
   width:  100%;
   justify-content: space-between;
-  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   background-color: #ffffff;
   border-radius: 5%;
@@ -350,21 +381,16 @@ i {
 }
 #accomodations-popular #popular article figure {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  
   padding: 2px 2px;
 }
-#accomodations-popular #popular article figure figcaption h3 {
-  
-  padding-top: 10px;
-  padding-left: 10px;
-}
+
 #accomodations-popular #popular article figure img {
-  width: 100%;
-  height: 110%;
-  max-width:  100%;
+  width: 120px;
+  height: 120px;
   border-top-left-radius: 5%;
 
-  display: flex;
   justify-content: center;
   border-top-left-radius: 5%;
   border-bottom-left-radius: 5%;
@@ -379,18 +405,28 @@ i {
 #accomodations-popular #popular article figure figcaption {
   display: flex;
   flex-direction: column;
+  
 }
-
-#accomodations-popular #popular article figure ul {
+#accomodations-popular #popular article figure figcaption h3{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-left: 10px;
+ 
+  
+  
+}
+#accomodations-popular #popular article figure figcaption ul {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+  flex-basis: 100%;
 }
 #accomodations-popular #popular article figure ul li {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  font-size: 0.6em;
+
+  font-size: 0.8em;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /***********************************
