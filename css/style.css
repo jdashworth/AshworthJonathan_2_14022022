@@ -224,11 +224,10 @@ i {
 ************************************/
 
 #accomodations-popular {
-  width: auto;
   min-height: 100%;
   display: flex;
   gap: 30px;
-  flex: 1;
+  
   margin: auto;
 }
 
@@ -240,7 +239,7 @@ i {
 }
 
 #accomodations-popular h2 {
-  font-size: 1em;
+  font-size: 1,2em;
   flex-basis: 100%;
   justify-content: flex-start;
   align-items: flex-start;
@@ -255,14 +254,13 @@ i {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   row-gap: 30px;
   background-color: #f2f2f2;
   border-radius: 20px;
   flex-basis: 67%;
   margin: 0 auto;
   padding: 25px 25px 25px 25px;
-  flex: 1;
 }
 
 #accomodations-popular #accomodations article {
@@ -275,21 +273,24 @@ i {
   border-radius: 10%;
   box-shadow: 2px 2px 10px #e0e0e0;
   padding: 5px 5px;
-  flex-basis: 20%;
+  flex-basis: 3%;
 }
 
 #accomodations-popular #accomodations article h3 {
   padding-left: 5px;
   flex-basis: 100%;
 }
+#accomodations-popular #accomodations article a {
+width:100%}
 
 #accomodations-popular #accomodations article a:link {
   text-decoration: none;
   list-style-type: none;
 }
 #accomodations-popular #accomodations article img {
-  width: 143px;
-  height: 70px;
+  width: 100%;
+  max-width: 100%;  
+  height: 100px;;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
 }
@@ -330,7 +331,6 @@ i {
   border-radius: 25px;
   flex-basis: 33%;
   margin: 25px 25px 25px 25px;
-  flex:1;
   margin: 0;
 }
 
