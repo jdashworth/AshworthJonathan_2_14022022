@@ -1,4 +1,21 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
+    #filters h2 {
+        margin-bottom: 10px;
+        flex-basis:  100%;;
+    }
+    #accomodations-popular {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #accomodations-popular #popular, #accomodations-popular  #accomodations {
+        flex-basis: 100%;
+       
+    }
+    #accomodations-popular #popular article {
+    width: 70%;
+align-self: center;    }
+}
+@media screen and (max-width: 767px) {
   
     body {
       width: 100%;
@@ -11,7 +28,7 @@
     width: 100%;
     display: flex;
     flex-wrap:wrap 
-    
+     
     }
    header img {
      justify-content: center;
