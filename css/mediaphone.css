@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+  
+    body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   
+    }
+    header {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap 
+    
+    }
+   header img {
+     justify-content: center;
+  
+   }
+    nav {
+      min-width: 100%;
+    }
+    #search-bar, #filters  {
+      display: flex;
+      flex-direction: column;
+  
+      flex-wrap: wrap;
+      align-items: center;
+    }
+   
+    #accomodations-popular {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      background-color: #f2f2f2;
+       border-radius: 0px;
+  
+    }
+    #accomodations-popular section #accomodations  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #FFFFFF;
+    }
+  }
