@@ -18,32 +18,33 @@
     width: 70%;
     align-self: center;    }
 
-#activities div article {
+    #activities div article {
     flex-basis: 100%;
     width: 100%;
-    row-gap: 15px;
 }   
     #activities div {
         height:  200px;
         flex-basis: 100%;
-        margin-bottom: 15px;
     }
     
     #activities div:nth-of-type(2), #activities div:nth-of-type(4) {
         height: 400px;
         flex-basis: 100%;
-        row-gap: 30px;
+        margin-bottom: 30px;
 
         
 }
     #activities div:nth-of-type(2) article:nth-of-type(1),
 #activities div:nth-of-type(4) article:nth-of-type(2) {
+    margin-bottom: 30px;
 
     height: 200px;
 }
 #activities div:nth-of-type(2) article:nth-of-type(2),
 #activities div:nth-of-type(4) article:nth-of-type(1) {
     height: 200px;
+    margin-bottom: 30px;
+
 }
 
 }
