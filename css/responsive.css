@@ -11,51 +11,43 @@
         flex-basis: 100%;
        
     }
+    #accomodations-popular #popular {
+        gap:30px;
+    }
     #accomodations-popular #popular article {
     width: 70%;
-align-self: center;    }
-}
-@media screen and (max-width: 767px) {
-  
-    body {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-   
-    }
-    header {
+    align-self: center;    }
+
+#activities div article {
+    flex-basis: 100%;
     width: 100%;
-    display: flex;
-    flex-wrap:wrap 
-     
+    row-gap: 15px;
+}   
+    #activities div {
+        height:  200px;
+        flex-basis: 100%;
+        margin-bottom: 15px;
     }
-   header img {
-     justify-content: center;
-  
-   }
-    nav {
-      min-width: 100%;
-    }
-    #search-bar, #filters  {
-      display: flex;
-      flex-direction: column;
-  
-      flex-wrap: wrap;
-      align-items: center;
-    }
-   
-    #accomodations-popular {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
-      background-color: #f2f2f2;
-       border-radius: 0px;
-  
-    }
-    #accomodations-popular section #accomodations  {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-color: #FFFFFF;
-    }
+    
+    #activities div:nth-of-type(2), #activities div:nth-of-type(4) {
+        height: 400px;
+        flex-basis: 100%;
+        row-gap: 30px;
+
+        
+}
+    #activities div:nth-of-type(2) article:nth-of-type(1),
+#activities div:nth-of-type(4) article:nth-of-type(2) {
+
+    height: 200px;
+}
+#activities div:nth-of-type(2) article:nth-of-type(2),
+#activities div:nth-of-type(4) article:nth-of-type(1) {
+    height: 200px;
+}
+
+}
+footer div div {
+    flex-basis: 100%;
   }
+
