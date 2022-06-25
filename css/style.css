@@ -414,14 +414,11 @@ flex-basis: 100%;
   flex-wrap: wrap;
   margin-top: 25px;
   margin-bottom: 25px;
-  gap: 30px;
 }
 #activities h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   flex-basis: 100%;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 #activities div {
   display: flex;
@@ -468,12 +465,16 @@ flex-basis: 100%;
 #activities div article figure figcaption {
   display: flex;
   align-items: center;
+  height: 50px;
+  min-height: 50px;
+
 }
 #activities div article figure figcaption h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   width: 100%;
+  font-size: 1em;
 }
 /***********************************
 *************footer*************
