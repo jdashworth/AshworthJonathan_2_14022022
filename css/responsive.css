@@ -81,6 +81,7 @@ header nav ul li:hover {
   border-top: none;
   border-bottom: 3px #0065fc solid;
   margin-top: 0;
+
 }
 main section#search-bar form {
   width: 100%;
@@ -88,7 +89,6 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 flex-wrap: wrap;
-width: fit-content;
 }
 input#search {
   border-top: 2px #f2f2f2 solid;
@@ -115,6 +115,7 @@ main section#search-bar form button span {
     border-bottom-left-radius: 15px;
     padding: 10px 15px;
     background-color: #0065fc solid;
+    margin-left: -15px;
   }
 
 main section#search-bar form button i {
