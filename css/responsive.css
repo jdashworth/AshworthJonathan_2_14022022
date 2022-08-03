@@ -70,7 +70,7 @@ header nav  {
   height: 3em !important; 
   
 }
-header nav ul {
+header nav ul li{
   height: 4em;
   border-bottom: #f2f2f2 solid;
 
@@ -79,15 +79,13 @@ header nav ul {
 
 header nav ul li:hover {
   border-top: none;
-  border-bottom: 3px #0065fc solid;
-  margin-top: 0;
+  border-bottom: #0065fc solid;
 
 }
 main section#search-bar form {
   width: 100%;
 display: flex;
 flex-direction: row;
-justify-content: center;
 flex-wrap: wrap;
 }
 input#search {
@@ -95,7 +93,7 @@ input#search {
   border-bottom: 2px #f2f2f2 solid;
   border-right: transparent;
   padding: 5px 5px 5px 5px;
-  min-width: 220px;
+
   
 }
 main section#search-bar, #filters, #activities {
@@ -116,7 +114,7 @@ main section#search-bar form button span {
     padding: 10px 15px;
     background-color: #0065fc solid;
     margin-left: -15px;
-  }
+  } 
 
 main section#search-bar form button i {
   font-size:  14px;
