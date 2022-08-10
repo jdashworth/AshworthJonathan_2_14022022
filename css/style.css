@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 body {
-
   font-family: "Raleway", sans-serif;
   border: 1px #000000 transparent;
   margin: 0 auto;
@@ -24,8 +23,6 @@ footer > div {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
-
 }
 header {
   display: flex;
@@ -55,10 +52,12 @@ header nav ul li {
   font-size: 0.9em;
   list-style-type: none;
   height: 100%;
-  margin-top: 3px;
   align-items: center;
   justify-content: center;
+  margin-top: 3px;
+  border-top: 3px transparent;
 }
+
 header nav ul li:hover {
   border-top: 3px #0065fc solid;
   margin-top: 0;
@@ -182,7 +181,7 @@ i {
   padding-right: 20px;
 }
 #filters ul li:hover {
-  background-color: #0564fca8;
+  background-color: #f2f5fba8;
   border: 1.5px solid #dbdbdb;
 }
 #filters ul li i {
@@ -193,7 +192,7 @@ i {
   height: 40px;
   justify-content: center;
   color: #0565fc;
-  background-color: #deebff;
+  background-color: #ecf3fd;
   border-radius: 50%;
   margin-right: 10px;
   margin-left: -4px;
@@ -243,7 +242,6 @@ i {
 
 #accomodations-popular h2 {
   font-size: 1.2em;
- 
 }
 #accomodations-popular h3 {
   font-size: 1em;
@@ -261,8 +259,8 @@ i {
   margin: 0 auto;
   padding: 25px 25px 25px 25px;
 }
-#accomodations-popular #accomodations h2{
-flex-basis: 100%;
+#accomodations-popular #accomodations h2 {
+  flex-basis: 100%;
 }
 #accomodations-popular #accomodations article {
   display: flex;
@@ -361,7 +359,7 @@ flex-basis: 100%;
   padding: 5px;
 }
 #accomodations-popular #popular article figure {
-    height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -371,7 +369,7 @@ flex-basis: 100%;
   object-fit: cover;
   width: 37%;
   min-width: 37%;
-  
+
   justify-content: center;
   border-top-left-radius: 13px;
   border-bottom-left-radius: 13px;
@@ -452,7 +450,6 @@ flex-basis: 100%;
   height: 36%;
 }
 
-
 #activities div article figure {
   display: flex;
   flex-direction: column;
@@ -474,7 +471,6 @@ flex-basis: 100%;
   align-items: center;
   height: 50px;
   min-height: 50px;
-
 }
 #activities div article figure figcaption h3 {
   padding-top: 5px;
@@ -504,7 +500,6 @@ footer div div {
   flex-basis: 33%;
 }
 footer div div h4 {
-
   justify-content: flex-start;
   margin-top: 15px;
 }
